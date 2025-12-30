@@ -1,0 +1,102 @@
+@model Stocks_App.Models.StockTrade
+
+@{
+    ViewData["Title"] = "Trade";
+}
+
+<div class="trade-container">
+    <div class="stock-header">
+        <h1>@Model.StockName</h1>
+        <h2>@Model.StockSymbol</h2>
+    </div>
+    
+    <div class="stock-price-container">
+        <div class="price-label">Price</div>
+        <div class="price-value" id="stockPrice">$@Model.Price.ToString("F2")</div>
+    </div>
+    
+    <div class="trade-form">
+        <form>
+            <input type="hidden" id="stockSymbol" value="@Model.StockSymbol" />
+            
+            <div class="form-group">
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" min="1" value="@Model.Quantity" class="form-control" />
+            </div>
+            
+            <div class="form-actions">
+                <button type="button" class="btn btn-buy">Buy</button>
+                <button type="button" class="btn btn-sell">Sell</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        (function() {
+            const stockSymbol = document.getElementById('stockSymbol').value;
+            const priceElement = document.getElementById('stockPrice');
+            let ws = null;
+            
+            // Get token from server - we'll need to pass it from the controller
+            const token = '@ViewData["FinnhubToken"]' || 'cc676uaad3i9rj8tb1s0';
+            
+            function connectWebSocket() {
+                const wsUrl = `wss://ws.finnhub.io?token=${token}`;
+                ws = new WebSocket(wsUrl);
+                
+                ws.onopen = function() {
+                    console.log('WebSocket connected');
+                    // Subscribe to the stock symbol
+                    ws.send(JSON.stringify({'type':'subscribe', 'symbol': stockSymbol}));
+                };
+                
+                ws.onmessage = function(event) {
+                    try {
+                        const data = JSON.parse(event.data);
+                        if (data.type === 'trade' && data.data && data.data.length > 0) {
+                            // Get the latest price (highest price from the data array)
+                            const prices = data.data.map(trade => trade.p);
+                            const latestPrice = Math.max(...prices);
+                            
+                            // Update the price display
+                            priceElement.textContent = '$' + latestPrice.toFixed(2);
+                            
+                            // Add animation effect
+                            priceElement.classList.add('price-updated');
+                            setTimeout(() => {
+                                priceElement.classList.remove('price-updated');
+                            }, 500);
+                        }
+                    } catch (error) {
+                        console.error('Error parsing WebSocket message:', error);
+                    }
+                };
+                
+                ws.onerror = function(error) {
+                    console.error('WebSocket error:', error);
+                };
+                
+                ws.onclose = function() {
+                    console.log('WebSocket closed');
+                    // Attempt to reconnect after 3 seconds
+                    setTimeout(connectWebSocket, 3000);
+                };
+            }
+            
+            // Connect when page loads
+            connectWebSocket();
+            
+            // Cleanup on page unload
+            window.addEventListener('beforeunload', function() {
+                if (ws) {
+                    // Unsubscribe before closing
+                    ws.send(JSON.stringify({'type':'unsubscribe', 'symbol': stockSymbol}));
+                    ws.close();
+                }
+            });
+        })();
+    </script>
+}
+

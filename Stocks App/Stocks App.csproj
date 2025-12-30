@@ -1,0 +1,11 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>Stocks_App</RootNamespace>
+    <UserSecretsId>c2515447-38da-4a48-8f42-4f53a1b4ffe5</UserSecretsId>
+  </PropertyGroup>
+
+</Project>
