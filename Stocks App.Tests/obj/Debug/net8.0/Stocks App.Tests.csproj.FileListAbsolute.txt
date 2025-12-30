@@ -1,0 +1,110 @@
+D:\.NET CORE\Stocks App\Stocks App.Tests\bin\Debug\net8.0\.msCoverageSourceRootsMapping_Stocks App.Tests
+D:\.NET CORE\Stocks App\Stocks App.Tests\bin\Debug\net8.0\CoverletSourceRootsMapping_Stocks App.Tests
+D:\.NET CORE\Stocks App\Stocks App.Tests\bin\Debug\net8.0\testhost.dll
+D:\.NET CORE\Stocks App\Stocks App.Tests\bin\Debug\net8.0\Stocks App.deps.json
+D:\.NET CORE\Stocks App\Stocks App.Tests\bin\Debug\net8.0\Stocks App.runtimeconfig.json
+D:\.NET CORE\Stocks App\Stocks App.Tests\bin\Debug\net8.0\appsettings.Development.json
+D:\.NET CORE\Stocks App\Stocks App.Tests\bin\Debug\net8.0\appsettings.json
+D:\.NET CORE\Stocks App\Stocks App.Tests\bin\Debug\net8.0\Stocks App.staticwebassets.runtime.json
+D:\.NET CORE\Stocks App\Stocks App.Tests\bin\Debug\net8.0\Stocks App.staticwebassets.endpoints.json
+D:\.NET CORE\Stocks App\Stocks App.Tests\bin\Debug\net8.0\Stocks App.exe
+D:\.NET CORE\Stocks App\Stocks App.Tests\bin\Debug\net8.0\testhost.exe
+D:\.NET CORE\Stocks App\Stocks App.Tests\bin\Debug\net8.0\xunit.runner.visualstudio.testadapter.dll
+D:\.NET CORE\Stocks App\Stocks App.Tests\bin\Debug\net8.0\xunit.runner.reporters.netcoreapp10.dll
+D:\.NET CORE\Stocks App\Stocks App.Tests\bin\Debug\net8.0\xunit.runner.utility.netcoreapp10.dll
+D:\.NET CORE\Stocks App\Stocks App.Tests\bin\Debug\net8.0\Stocks App.Tests.deps.json
+D:\.NET CORE\Stocks App\Stocks App.Tests\bin\Debug\net8.0\Stocks App.Tests.runtimeconfig.json
+D:\.NET CORE\Stocks App\Stocks App.Tests\bin\Debug\net8.0\Stocks App.Tests.dll
+D:\.NET CORE\Stocks App\Stocks App.Tests\bin\Debug\net8.0\Stocks App.Tests.pdb
+D:\.NET CORE\Stocks App\Stocks App.Tests\bin\Debug\net8.0\Microsoft.VisualStudio.CodeCoverage.Shim.dll
+D:\.NET CORE\Stocks App\Stocks App.Tests\bin\Debug\net8.0\Microsoft.TestPlatform.CoreUtilities.dll
+D:\.NET CORE\Stocks App\Stocks App.Tests\bin\Debug\net8.0\Microsoft.TestPlatform.PlatformAbstractions.dll
+D:\.NET CORE\Stocks App\Stocks App.Tests\bin\Debug\net8.0\Microsoft.VisualStudio.TestPlatform.ObjectModel.dll
+D:\.NET CORE\Stocks App\Stocks App.Tests\bin\Debug\net8.0\Microsoft.TestPlatform.CommunicationUtilities.dll
+D:\.NET CORE\Stocks App\Stocks App.Tests\bin\Debug\net8.0\Microsoft.TestPlatform.CrossPlatEngine.dll
+D:\.NET CORE\Stocks App\Stocks App.Tests\bin\Debug\net8.0\Microsoft.TestPlatform.Utilities.dll
+D:\.NET CORE\Stocks App\Stocks App.Tests\bin\Debug\net8.0\Microsoft.VisualStudio.TestPlatform.Common.dll
+D:\.NET CORE\Stocks App\Stocks App.Tests\bin\Debug\net8.0\Newtonsoft.Json.dll
+D:\.NET CORE\Stocks App\Stocks App.Tests\bin\Debug\net8.0\xunit.abstractions.dll
+D:\.NET CORE\Stocks App\Stocks App.Tests\bin\Debug\net8.0\xunit.assert.dll
+D:\.NET CORE\Stocks App\Stocks App.Tests\bin\Debug\net8.0\xunit.core.dll
+D:\.NET CORE\Stocks App\Stocks App.Tests\bin\Debug\net8.0\xunit.execution.dotnet.dll
+D:\.NET CORE\Stocks App\Stocks App.Tests\bin\Debug\net8.0\cs\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\.NET CORE\Stocks App\Stocks App.Tests\bin\Debug\net8.0\cs\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\.NET CORE\Stocks App\Stocks App.Tests\bin\Debug\net8.0\de\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\.NET CORE\Stocks App\Stocks App.Tests\bin\Debug\net8.0\de\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\.NET CORE\Stocks App\Stocks App.Tests\bin\Debug\net8.0\es\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\.NET CORE\Stocks App\Stocks App.Tests\bin\Debug\net8.0\es\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\.NET CORE\Stocks App\Stocks App.Tests\bin\Debug\net8.0\fr\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\.NET CORE\Stocks App\Stocks App.Tests\bin\Debug\net8.0\fr\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\.NET CORE\Stocks App\Stocks App.Tests\bin\Debug\net8.0\it\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\.NET CORE\Stocks App\Stocks App.Tests\bin\Debug\net8.0\it\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\.NET CORE\Stocks App\Stocks App.Tests\bin\Debug\net8.0\ja\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\.NET CORE\Stocks App\Stocks App.Tests\bin\Debug\net8.0\ja\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\.NET CORE\Stocks App\Stocks App.Tests\bin\Debug\net8.0\ko\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\.NET CORE\Stocks App\Stocks App.Tests\bin\Debug\net8.0\ko\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\.NET CORE\Stocks App\Stocks App.Tests\bin\Debug\net8.0\pl\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\.NET CORE\Stocks App\Stocks App.Tests\bin\Debug\net8.0\pl\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\.NET CORE\Stocks App\Stocks App.Tests\bin\Debug\net8.0\pt-BR\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\.NET CORE\Stocks App\Stocks App.Tests\bin\Debug\net8.0\pt-BR\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\.NET CORE\Stocks App\Stocks App.Tests\bin\Debug\net8.0\ru\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\.NET CORE\Stocks App\Stocks App.Tests\bin\Debug\net8.0\ru\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\.NET CORE\Stocks App\Stocks App.Tests\bin\Debug\net8.0\tr\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\.NET CORE\Stocks App\Stocks App.Tests\bin\Debug\net8.0\tr\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\.NET CORE\Stocks App\Stocks App.Tests\bin\Debug\net8.0\zh-Hans\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\.NET CORE\Stocks App\Stocks App.Tests\bin\Debug\net8.0\zh-Hans\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\.NET CORE\Stocks App\Stocks App.Tests\bin\Debug\net8.0\zh-Hant\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\.NET CORE\Stocks App\Stocks App.Tests\bin\Debug\net8.0\zh-Hant\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\.NET CORE\Stocks App\Stocks App.Tests\bin\Debug\net8.0\cs\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+D:\.NET CORE\Stocks App\Stocks App.Tests\bin\Debug\net8.0\cs\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+D:\.NET CORE\Stocks App\Stocks App.Tests\bin\Debug\net8.0\cs\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+D:\.NET CORE\Stocks App\Stocks App.Tests\bin\Debug\net8.0\de\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+D:\.NET CORE\Stocks App\Stocks App.Tests\bin\Debug\net8.0\de\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+D:\.NET CORE\Stocks App\Stocks App.Tests\bin\Debug\net8.0\de\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+D:\.NET CORE\Stocks App\Stocks App.Tests\bin\Debug\net8.0\es\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+D:\.NET CORE\Stocks App\Stocks App.Tests\bin\Debug\net8.0\es\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+D:\.NET CORE\Stocks App\Stocks App.Tests\bin\Debug\net8.0\es\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+D:\.NET CORE\Stocks App\Stocks App.Tests\bin\Debug\net8.0\fr\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+D:\.NET CORE\Stocks App\Stocks App.Tests\bin\Debug\net8.0\fr\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+D:\.NET CORE\Stocks App\Stocks App.Tests\bin\Debug\net8.0\fr\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+D:\.NET CORE\Stocks App\Stocks App.Tests\bin\Debug\net8.0\it\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+D:\.NET CORE\Stocks App\Stocks App.Tests\bin\Debug\net8.0\it\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+D:\.NET CORE\Stocks App\Stocks App.Tests\bin\Debug\net8.0\it\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+D:\.NET CORE\Stocks App\Stocks App.Tests\bin\Debug\net8.0\ja\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+D:\.NET CORE\Stocks App\Stocks App.Tests\bin\Debug\net8.0\ja\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+D:\.NET CORE\Stocks App\Stocks App.Tests\bin\Debug\net8.0\ja\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+D:\.NET CORE\Stocks App\Stocks App.Tests\bin\Debug\net8.0\ko\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+D:\.NET CORE\Stocks App\Stocks App.Tests\bin\Debug\net8.0\ko\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+D:\.NET CORE\Stocks App\Stocks App.Tests\bin\Debug\net8.0\ko\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+D:\.NET CORE\Stocks App\Stocks App.Tests\bin\Debug\net8.0\pl\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+D:\.NET CORE\Stocks App\Stocks App.Tests\bin\Debug\net8.0\pl\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+D:\.NET CORE\Stocks App\Stocks App.Tests\bin\Debug\net8.0\pl\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+D:\.NET CORE\Stocks App\Stocks App.Tests\bin\Debug\net8.0\pt-BR\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+D:\.NET CORE\Stocks App\Stocks App.Tests\bin\Debug\net8.0\pt-BR\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+D:\.NET CORE\Stocks App\Stocks App.Tests\bin\Debug\net8.0\pt-BR\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+D:\.NET CORE\Stocks App\Stocks App.Tests\bin\Debug\net8.0\ru\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+D:\.NET CORE\Stocks App\Stocks App.Tests\bin\Debug\net8.0\ru\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+D:\.NET CORE\Stocks App\Stocks App.Tests\bin\Debug\net8.0\ru\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+D:\.NET CORE\Stocks App\Stocks App.Tests\bin\Debug\net8.0\tr\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+D:\.NET CORE\Stocks App\Stocks App.Tests\bin\Debug\net8.0\tr\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+D:\.NET CORE\Stocks App\Stocks App.Tests\bin\Debug\net8.0\tr\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+D:\.NET CORE\Stocks App\Stocks App.Tests\bin\Debug\net8.0\zh-Hans\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+D:\.NET CORE\Stocks App\Stocks App.Tests\bin\Debug\net8.0\zh-Hans\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+D:\.NET CORE\Stocks App\Stocks App.Tests\bin\Debug\net8.0\zh-Hans\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+D:\.NET CORE\Stocks App\Stocks App.Tests\bin\Debug\net8.0\zh-Hant\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+D:\.NET CORE\Stocks App\Stocks App.Tests\bin\Debug\net8.0\zh-Hant\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+D:\.NET CORE\Stocks App\Stocks App.Tests\bin\Debug\net8.0\zh-Hant\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+D:\.NET CORE\Stocks App\Stocks App.Tests\bin\Debug\net8.0\Stocks App.dll
+D:\.NET CORE\Stocks App\Stocks App.Tests\bin\Debug\net8.0\Stocks App.pdb
+D:\.NET CORE\Stocks App\Stocks App.Tests\obj\Debug\net8.0\Stocks App.Tests.csproj.AssemblyReference.cache
+D:\.NET CORE\Stocks App\Stocks App.Tests\obj\Debug\net8.0\Stocks App.Tests.GeneratedMSBuildEditorConfig.editorconfig
+D:\.NET CORE\Stocks App\Stocks App.Tests\obj\Debug\net8.0\Stocks App.Tests.AssemblyInfoInputs.cache
+D:\.NET CORE\Stocks App\Stocks App.Tests\obj\Debug\net8.0\Stocks App.Tests.AssemblyInfo.cs
+D:\.NET CORE\Stocks App\Stocks App.Tests\obj\Debug\net8.0\Stocks App.Tests.csproj.CoreCompileInputs.cache
+D:\.NET CORE\Stocks App\Stocks App.Tests\obj\Debug\net8.0\Stocks App.Tests.sourcelink.json
+D:\.NET CORE\Stocks App\Stocks App.Tests\obj\Debug\net8.0\Stocks A.B22A80BF.Up2Date
+D:\.NET CORE\Stocks App\Stocks App.Tests\obj\Debug\net8.0\Stocks App.Tests.dll
+D:\.NET CORE\Stocks App\Stocks App.Tests\obj\Debug\net8.0\refint\Stocks App.Tests.dll
+D:\.NET CORE\Stocks App\Stocks App.Tests\obj\Debug\net8.0\Stocks App.Tests.pdb
+D:\.NET CORE\Stocks App\Stocks App.Tests\obj\Debug\net8.0\Stocks App.Tests.genruntimeconfig.cache
+D:\.NET CORE\Stocks App\Stocks App.Tests\obj\Debug\net8.0\ref\Stocks App.Tests.dll

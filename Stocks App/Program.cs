@@ -15,6 +15,9 @@ builder.Services.AddHttpClient();
 // Register FinnhubService
 builder.Services.AddScoped<IFinnhubService, FinnhubService>();
 
+// Register StocksService as Singleton to maintain in-memory data across requests
+builder.Services.AddSingleton<IStocksService, StocksService>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline

@@ -28,3 +28,4 @@ D:\.NET CORE\Stocks App\Stocks App\obj\Debug\net8.0\refint\Stocks App.dll
 D:\.NET CORE\Stocks App\Stocks App\obj\Debug\net8.0\Stocks App.pdb
 D:\.NET CORE\Stocks App\Stocks App\obj\Debug\net8.0\Stocks App.genruntimeconfig.cache
 D:\.NET CORE\Stocks App\Stocks App\obj\Debug\net8.0\ref\Stocks App.dll
+D:\.NET CORE\Stocks App\Stocks App\obj\Debug\net8.0\Stocks App.sourcelink.json

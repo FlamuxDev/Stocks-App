@@ -11,13 +11,15 @@ public class TradeController : Controller
 {
     private readonly IOptions<TradingOptions> _tradingOptions;
     private readonly IFinnhubService _finnhubService;
+    private readonly IStocksService _stocksService;
     private readonly ILogger<TradeController> _logger;
     private readonly IConfiguration _configuration;
 
-    public TradeController(IOptions<TradingOptions> tradingOptions, IFinnhubService finnhubService, ILogger<TradeController> logger, IConfiguration configuration)
+    public TradeController(IOptions<TradingOptions> tradingOptions, IFinnhubService finnhubService, IStocksService stocksService, ILogger<TradeController> logger, IConfiguration configuration)
     {
         _tradingOptions = tradingOptions;
         _finnhubService = finnhubService;
+        _stocksService = stocksService;
         _logger = logger;
         _configuration = configuration;
     }
