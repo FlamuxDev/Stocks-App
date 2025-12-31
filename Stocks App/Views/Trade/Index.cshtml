@@ -16,8 +16,25 @@
     </div>
     
     <div class="trade-form">
-        <form>
+        <form id="buyForm" method="post" action="@Url.Action("BuyOrder", "Trade")" style="display: none;">
+            @Html.AntiForgeryToken()
+            <input type="hidden" name="StockSymbol" id="buyStockSymbol" />
+            <input type="hidden" name="StockName" id="buyStockName" />
+            <input type="hidden" name="Quantity" id="buyQuantity" />
+            <input type="hidden" name="Price" id="buyPrice" />
+        </form>
+        
+        <form id="sellForm" method="post" action="@Url.Action("SellOrder", "Trade")" style="display: none;">
+            @Html.AntiForgeryToken()
+            <input type="hidden" name="StockSymbol" id="sellStockSymbol" />
+            <input type="hidden" name="StockName" id="sellStockName" />
+            <input type="hidden" name="Quantity" id="sellQuantity" />
+            <input type="hidden" name="Price" id="sellPrice" />
+        </form>
+        
+        <div>
             <input type="hidden" id="stockSymbol" value="@Model.StockSymbol" />
+            <input type="hidden" id="stockName" value="@Model.StockName" />
             
             <div class="form-group">
                 <label for="quantity">Quantity:</label>
@@ -25,10 +42,10 @@
             </div>
             
             <div class="form-actions">
-                <button type="button" class="btn btn-buy">Buy</button>
-                <button type="button" class="btn btn-sell">Sell</button>
+                <button type="button" class="btn btn-buy" id="buyButton">Buy</button>
+                <button type="button" class="btn btn-sell" id="sellButton">Sell</button>
             </div>
-        </form>
+        </div>
     </div>
 </div>
 
@@ -87,6 +104,42 @@
             
             // Connect when page loads
             connectWebSocket();
+            
+            // Buy button click handler
+            document.getElementById('buyButton').addEventListener('click', function() {
+                const quantity = parseInt(document.getElementById('quantity').value) || 0;
+                const price = parseFloat(priceElement.textContent.replace('$', '')) || 0;
+                const symbol = document.getElementById('stockSymbol').value;
+                const name = document.getElementById('stockName').value;
+                
+                if (quantity > 0 && price > 0) {
+                    document.getElementById('buyStockSymbol').value = symbol;
+                    document.getElementById('buyStockName').value = name;
+                    document.getElementById('buyQuantity').value = quantity;
+                    document.getElementById('buyPrice').value = price;
+                    document.getElementById('buyForm').submit();
+                } else {
+                    alert('Please enter a valid quantity and ensure price is available.');
+                }
+            });
+            
+            // Sell button click handler
+            document.getElementById('sellButton').addEventListener('click', function() {
+                const quantity = parseInt(document.getElementById('quantity').value) || 0;
+                const price = parseFloat(priceElement.textContent.replace('$', '')) || 0;
+                const symbol = document.getElementById('stockSymbol').value;
+                const name = document.getElementById('stockName').value;
+                
+                if (quantity > 0 && price > 0) {
+                    document.getElementById('sellStockSymbol').value = symbol;
+                    document.getElementById('sellStockName').value = name;
+                    document.getElementById('sellQuantity').value = quantity;
+                    document.getElementById('sellPrice').value = price;
+                    document.getElementById('sellForm').submit();
+                } else {
+                    alert('Please enter a valid quantity and ensure price is available.');
+                }
+            });
             
             // Cleanup on page unload
             window.addEventListener('beforeunload', function() {

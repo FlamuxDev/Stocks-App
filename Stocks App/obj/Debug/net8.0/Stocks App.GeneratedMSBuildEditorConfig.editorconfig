@@ -9,29 +9,33 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Stocks_App
 build_property.RootNamespace = Stocks_App
-build_property.ProjectDir = D:\.NET CORE\Stocks App\Stocks App\
+build_property.ProjectDir = d:\.NET CORE\Stocks App\Stocks App\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\.NET CORE\Stocks App\Stocks App
+build_property.MSBuildProjectDirectory = d:\.NET CORE\Stocks App\Stocks App
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 8.0
 build_property.EnableCodeStyleSeverity = 
 
-[D:/.NET CORE/Stocks App/Stocks App/Views/Shared/_Layout.cshtml]
+[d:/.NET CORE/Stocks App/Stocks App/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/.NET CORE/Stocks App/Stocks App/Views/Trade/Index.cshtml]
+[d:/.NET CORE/Stocks App/Stocks App/Views/Trade/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhZGVcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/.NET CORE/Stocks App/Stocks App/Views/_ViewImports.cshtml]
+[d:/.NET CORE/Stocks App/Stocks App/Views/Trade/Orders.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhZGVcT3JkZXJzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/.NET CORE/Stocks App/Stocks App/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/.NET CORE/Stocks App/Stocks App/Views/_ViewStart.cshtml]
+[d:/.NET CORE/Stocks App/Stocks App/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

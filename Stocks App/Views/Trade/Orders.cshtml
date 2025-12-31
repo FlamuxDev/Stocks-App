@@ -1,0 +1,97 @@
+@model Stocks_App.Models.Orders
+
+@{
+    ViewData["Title"] = "Orders";
+}
+
+<div class="orders-container">
+    <div class="orders-header">
+        <h1>Orders</h1>
+        <a href="@Url.Action("Index", "Trade")" class="btn btn-primary">New Trade</a>
+    </div>
+
+    <div class="orders-content">
+        <div class="orders-section">
+            <h2>Buy Orders</h2>
+            @if (Model.BuyOrders != null && Model.BuyOrders.Any())
+            {
+                <table class="orders-table">
+                    <thead>
+                        <tr>
+                            <th>Date and Time</th>
+                            <th>Stock</th>
+                            <th>Order Type</th>
+                            <th>Quantity</th>
+                            <th>Price</th>
+                            <th>Trade Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var order in Model.BuyOrders)
+                        {
+                            <tr>
+                                <td>@order.DateAndTimeOfOrder.ToString("yyyy-MM-dd HH:mm:ss")</td>
+                                <td>
+                                    <div class="stock-info">
+                                        <strong>@order.StockSymbol</strong>
+                                        <span>@order.StockName</span>
+                                    </div>
+                                </td>
+                                <td><span class="badge badge-buy">Buy</span></td>
+                                <td>@order.Quantity</td>
+                                <td>$@order.Price.ToString("F2")</td>
+                                <td>$@order.TradeAmount.ToString("F2")</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            }
+            else
+            {
+                <p class="no-orders">No buy orders found.</p>
+            }
+        </div>
+
+        <div class="orders-section">
+            <h2>Sell Orders</h2>
+            @if (Model.SellOrders != null && Model.SellOrders.Any())
+            {
+                <table class="orders-table">
+                    <thead>
+                        <tr>
+                            <th>Date and Time</th>
+                            <th>Stock</th>
+                            <th>Order Type</th>
+                            <th>Quantity</th>
+                            <th>Price</th>
+                            <th>Trade Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var order in Model.SellOrders)
+                        {
+                            <tr>
+                                <td>@order.DateAndTimeOfOrder.ToString("yyyy-MM-dd HH:mm:ss")</td>
+                                <td>
+                                    <div class="stock-info">
+                                        <strong>@order.StockSymbol</strong>
+                                        <span>@order.StockName</span>
+                                    </div>
+                                </td>
+                                <td><span class="badge badge-sell">Sell</span></td>
+                                <td>@order.Quantity</td>
+                                <td>$@order.Price.ToString("F2")</td>
+                                <td>$@order.TradeAmount.ToString("F2")</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            }
+            else
+            {
+                <p class="no-orders">No sell orders found.</p>
+            }
+        </div>
+    </div>
+</div>
+

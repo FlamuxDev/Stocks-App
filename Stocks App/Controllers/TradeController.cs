@@ -1,6 +1,7 @@
 using System.Text.Json;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
+using Stocks_App.DTOs;
 using Stocks_App.Models;
 using Stocks_App.Services;
 
@@ -78,12 +79,14 @@ public class TradeController : Controller
                 return defaultValue;
             }
             
+            var defaultQuantity = _tradingOptions.Value.DefaultOrderQuantity;
+            
             var stockTrade = new StockTrade
             {
                 StockSymbol = GetStringValue(companyProfile, "ticker", stockSymbol),
                 StockName = GetStringValue(companyProfile, "name", "N/A"),
                 Price = GetDoubleValue(stockPriceQuote, "c"),
-                Quantity = 0
+                Quantity = defaultQuantity > 0 ? defaultQuantity : 100
             };
             
             return View(stockTrade);
@@ -96,8 +99,98 @@ public class TradeController : Controller
                 StockSymbol = _tradingOptions.Value.DefaultStockSymbol ?? "MSFT",
                 StockName = "Error loading data",
                 Price = 0,
-                Quantity = 0
+                Quantity = _tradingOptions.Value.DefaultOrderQuantity > 0 ? _tradingOptions.Value.DefaultOrderQuantity : 100
             });
+        }
+    }
+
+    [HttpPost]
+    [Route("[action]")]
+    public async Task<IActionResult> BuyOrder([FromForm] BuyOrderRequest buyOrderRequest)
+    {
+        if (buyOrderRequest == null)
+        {
+            return RedirectToAction("Index");
+        }
+
+        buyOrderRequest.DateAndTimeOfOrder = DateTime.Now;
+
+        if (!ModelState.IsValid)
+        {
+            // If validation fails, redirect back to Index with error
+            TempData["Error"] = "Validation failed. Please check your input.";
+            return RedirectToAction("Index");
+        }
+
+        try
+        {
+            await _stocksService.CreateBuyOrder(buyOrderRequest);
+            return RedirectToAction("Orders");
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError(ex, "Error creating buy order");
+            TempData["Error"] = "Failed to create buy order. Please try again.";
+            return RedirectToAction("Index");
+        }
+    }
+
+    [HttpPost]
+    [Route("[action]")]
+    public async Task<IActionResult> SellOrder([FromForm] SellOrderRequest sellOrderRequest)
+    {
+        if (sellOrderRequest == null)
+        {
+            return RedirectToAction("Index");
+        }
+
+        sellOrderRequest.DateAndTimeOfOrder = DateTime.Now;
+
+        if (!ModelState.IsValid)
+        {
+            // If validation fails, redirect back to Index with error
+            TempData["Error"] = "Validation failed. Please check your input.";
+            return RedirectToAction("Index");
+        }
+
+        try
+        {
+            await _stocksService.CreateSellOrder(sellOrderRequest);
+            return RedirectToAction("Orders");
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError(ex, "Error creating sell order");
+            TempData["Error"] = "Failed to create sell order. Please try again.";
+            return RedirectToAction("Index");
+        }
+    }
+
+    [Route("[action]")]
+    public async Task<IActionResult> Orders()
+    {
+        try
+        {
+            var buyOrdersTask = _stocksService.GetBuyOrders();
+            var sellOrdersTask = _stocksService.GetSellOrders();
+
+            await Task.WhenAll(buyOrdersTask, sellOrdersTask);
+
+            var buyOrders = await buyOrdersTask;
+            var sellOrders = await sellOrdersTask;
+
+            var orders = new Orders
+            {
+                BuyOrders = buyOrders,
+                SellOrders = sellOrders
+            };
+
+            return View(orders);
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError(ex, "Error fetching orders");
+            return View(new Orders());
         }
     }
 }
